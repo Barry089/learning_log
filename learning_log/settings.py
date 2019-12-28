@@ -126,6 +126,7 @@ STATIC_URL = '/static/'
 
 # 我的设置
 LOGIN_URL = '/users/login/'
+
 # django-bootstrap3的设置
 BOOTSTRAP3 = {
     'include_jquery': True,
@@ -139,7 +140,10 @@ if os.getcwd() == '/app':
     }
     # 让 request.is_secure() 承认X-Forwarded-Proto头
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['learning-log.herokuapp.com']
+    DEBUG = False
+
+    # 静态资产配置
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     STATIC_ROOT = 'staticfiles'
     STATICFILES_DIRS = (

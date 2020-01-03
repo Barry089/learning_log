@@ -1,0 +1,3 @@
+# learning_log
+Initial push...
+The Project Website：https://barrys-log.herokuapp.com/
